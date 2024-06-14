@@ -135,6 +135,7 @@ function setProgressbar(e) {
 prevBtn.addEventListener('click', prevSong);
 // Evenet liesteners to next song
 nextBtn.addEventListener('click', nextSong);
+music.addEventListener('ended', nextSong);
 // Event listener to update the progress bar
 music.addEventListener('timeupdate', updateProgressBar);
 progressContainer.addEventListener('click', setProgressbar);
